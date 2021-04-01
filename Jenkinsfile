@@ -4,7 +4,7 @@ pipeline{
     stage('test'){
     agent any
     steps{
-      sh 'echo this is a test jenkinsfile pipeline'
+      bat 'echo this is a test jenkinsfile pipeline'
     }
   }
  }
