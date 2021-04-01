@@ -2,7 +2,7 @@ pipeline{
   agent none
   stages{
     stage('test'){
-    agent:any
+    agent any
     steps{
       sh 'echo this is a test jenkinsfile pipeline'
     }
