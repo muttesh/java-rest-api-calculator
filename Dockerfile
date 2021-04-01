@@ -1,2 +1,4 @@
-FROM tomcat:9
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+FROM openjdk:11
+EXPOSE 8081
+ADD target/*.jar *.jar
+ENTRYPOINT ["java","-jar","/*.jar"]
